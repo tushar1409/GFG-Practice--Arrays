@@ -14,7 +14,7 @@ class Solution
         long long sum=arr[0];
         int high=0;
         int low=0;
-        while((low<n)and(high<n))
+        while((low<n)&&(high<n))
         {
             if(sum==s)
             {
