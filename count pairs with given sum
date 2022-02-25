@@ -9,8 +9,9 @@ public:
            int b=k-arr[i];//a+b=k-->b=k-a
            
            if(m[b]){
-               count=count+m[b]; //adding frequency if b is in map as a was already in map nd if b is also
-               //present , it means both a nd b are present that makes a k.
+               count=count+m[b]; //adding by freq of b  in map as a was already in map nd if b is also
+               //present , it means both a nd b are present that makes a k. in short
+               //jitne baar b map mein hai utne baar a nd b ka pair bnega
            }
            m[arr[i]]++;
        }
