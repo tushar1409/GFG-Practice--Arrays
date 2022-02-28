@@ -1,0 +1,19 @@
+ public:
+        int closestToZero(int arr[], int n)
+        {
+            // your code here 
+            sort(arr , arr+n);
+            int i = 0 , j = n-1;
+            int ans = INT_MAX;
+            while(i < j){
+                int s = arr[i] + arr[j];
+                if(abs(s) == abs(ans)){
+                    if(ans < s) ans = s;
+                }
+                else if(abs(s) < abs(ans)) ans = s;
+                if(s == 0) break;
+                else if(s > 0) j--;
+                else i++;
+            }
+            return ans;
+        }
